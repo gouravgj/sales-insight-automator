@@ -7,6 +7,8 @@ export const analyzeSales = async (req, res) => {
     const file = req.file;
     const email = req.body.email;
 
+    console.log("Email received:", email);
+
     const data = await parseFile(file);
 
     const summary = await generateSummary(data);
@@ -18,6 +20,8 @@ export const analyzeSales = async (req, res) => {
       summary,
     });
   } catch (error) {
+    console.log(error);
+
     res.status(500).json({
       error: error.message,
     });
