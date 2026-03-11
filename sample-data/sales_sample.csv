@@ -1,0 +1,6 @@
+OrderID,Region,Category,Product,Quantity,Revenue
+1,North,Electronics,Laptop,2,1200
+2,South,Clothing,Jacket,5,750
+3,West,Furniture,Chair,10,900
+4,North,Electronics,Smartphone,8,3200
+5,East,Clothing,Tshirt,20,400
